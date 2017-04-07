@@ -1,10 +1,15 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
 
+body{
+	margin-top: 0px;
+}
+
 h1{
 	font-family: 'Ravie';
 	font-size: 36px;
 	color: #e90c0c;
+	margin: 0px;
 }
 
 h2{
@@ -13,8 +18,49 @@ h2{
 	color: #333;
 }
 
+header > h2{
+	text-align: center;
+	margin: 0px;
+}
+
 header > h2 > span{
 	color: #d027aa;
+}
+
+main{
+	background-image: linear-gradient(#f6f1b2,#4599b2);
+	box-sizing: border-box;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article > h3 {
+	font-family: "Verdana";
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+
+article > section{
+	display: flex;
+	font-family: "Verdana";
+	font-size: 14px;
+	color: #333;	
+}
+
+/*section{
+	display: flex;
+	flex-direction: column;
+}*/
+
+section > article:first-child{
+	flex: 3;
+}
+section > article:last-child{
+	text-align: right;
+	margin-right: 15px; 
+	flex: 1;
 }
 
 aside{
@@ -32,23 +78,35 @@ aside > h2 {
 	margin: 0 auto;
 }
 
-#siri{
-	position: absolute;
-	top: 7px;
-}
-
-#peixe{
+footer > img{
 	position: relative;
-	top: 14px;
-	left: 44px;
+	right: 15px;
 }
 
 #ticket{
 	position: absolute;
 	top: 295px;
 	left: -70px;
+	transition: left 100ms ease-out; /* propriedade, duração, interpolação */
 }
 
-#recipiente{
-	margin: 0 auto;
+#ticket:hover{
+	left: 0;
+}
+
+#siri{
+	position: relative;
+	top: 7px;
+	left: -10px;
+}
+
+#bolhas{
+	position: relative;
+	right: 20px;
+}
+
+#peixe{
+	position: relative;
+	top: 14px;
+	left: -44px;
 }
