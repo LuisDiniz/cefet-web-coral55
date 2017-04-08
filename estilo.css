@@ -36,9 +36,9 @@ main{
 
 #cardapio{
 	border: 1px solid #aac0ae;
+	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
-	left: 154px;
 	width: 646px;
 }
 
@@ -77,13 +77,14 @@ section > article:last-child{
 }
 
 #lateral{
+	position: relative;
 	float: left;
 	box-sizing: border-box;
 	width: 154px;
 }
 
 #lateral > h2 {
-	position: relative;
+	position: absolute;
 	font-family: 'Verdana';
 	font-size: 48px;
 	font-weight: bold;
@@ -101,7 +102,6 @@ section > article:last-child{
 
 #bolhas{
 	position: relative;
-	top: 20px;
 	right: 20px;
 }
 
@@ -113,6 +113,7 @@ section > article:last-child{
 
 footer {
 	position: relative;
+	display: inline-block;
 	left: 154px;
 	height: 111px;
 	width: 646px;
